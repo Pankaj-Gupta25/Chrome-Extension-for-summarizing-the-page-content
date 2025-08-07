@@ -1,72 +1,41 @@
-🧠 Chrome Extension for Summarizing Page Content
-This is a GenAI-powered Chrome extension that summarizes the content of the current web page you're viewing.
+# Crome-Extension-for-summarizing-the-page-content
+This is a gen ai took in the form of a browser extension which will summarize the page content currently on your browser. 
 
-📁 Branch Information
-All the required files are in the master branch.
+**The files is in the master branch**
 
-🚀 How to Use the Extension
-Follow the steps below to install and use the extension:
+##In order to use the extention first clone this repo then follow the folling steps : 
 
-Clone the Repository
+1 -->  chrome://extensions/
+2 --> on the developer mode
+3 --> select the load unpack
+4 --> now upload the extension file which contain the  manifest.json,popup.html,popup.js,icon.png 
+6 --> now you are needed to on the Fast Api server by using the command uvicorn main:app --reload --port 8000
+5 --> your chrome extention is ready to be used in your extentions icon
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/Crome-Extension-for-summarizing-the-page-content.git
-cd Crome-Extension-for-summarizing-the-page-content
-Start the FastAPI Server
+Using these methods you can set up the Fast Api server localy and use the Extension to summarize the web page content 
 
-Navigate to the directory where main.py is located.
+But if you want to skip the process of turning on the Fast API server you can replace the responce fetch url to "https://crome-extension-for-summarizing-the-page-njdi.onrender.com/summarize" which is my hosted server on render.
 
-Run the following command to start the server:
+## 🔧 Tech Stack
 
-bash
-Copy
-Edit
-uvicorn main:app --reload --port 8000
-Open the Chrome Extensions Page
+**Frontend (Chrome Extension):**
+- HTML
+- CSS
+- JavaScript
+- Chrome Extension APIs
 
-In Chrome, go to:
+**Backend:**
+- Python
+- FastAPI
+- Uvicorn (ASGI server)
 
-arduino
-Copy
-Edit
-chrome://extensions/
-Enable Developer Mode
+ **Gen-AI/LLM**
+- LangChain
+- Groq
+- model="openai/gpt-oss-20b"
 
-Turn on the Developer Mode toggle in the top right.
+**Hosting:**
+- 🚀 Render
 
-Load the Unpacked Extension
-
-Click on “Load unpacked”
-
-Select the folder that contains the following files:
-
-manifest.json
-
-popup.html
-
-popup.js
-
-icon.png
-
-You're Ready to Go!
-
-The extension icon will appear in the Chrome toolbar.
-
-Click it to summarize the current page content.
-
-⚠️ Important Notes
-Ensure the FastAPI server is running on http://localhost:8000 before using the extension.
-
-If you make changes to the code, remember to reload the extension from chrome://extensions/. 
-
-If you want to skip the task of turn on the Fast Api server then in the popup.json replace the
-
- const response = await fetch("http://localhost:8000/summarize" 
-
- with : const response = await fetch("https://crome-extension-for-summarizing-the-page-njdi.onrender.com/summarize" 
-
- this is a server hosted on the render 
-
-with 
+**Version Control:**
+- Git & GitHub
