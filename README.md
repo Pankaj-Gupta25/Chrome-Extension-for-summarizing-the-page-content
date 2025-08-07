@@ -5,7 +5,8 @@ This is a gen ai took in the form of a browser extension which will summarize th
 
 #In order to use the extention first clone this repo then follow the folling steps : 
 
-1 -->  chrome://extensions/ \n
+1 -->  chrome://extensions/
+
 2 --> on the developer mode
 3 --> select the load unpack
 4 --> now upload the extension file which contain the  manifest.json,popup.html,popup.js,icon.png 
