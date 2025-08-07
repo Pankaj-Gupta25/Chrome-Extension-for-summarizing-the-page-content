@@ -46,3 +46,7 @@ But if you want to skip the process of turning on the Fast API server you can re
 
 **Version Control:**
 - Git & GitHub
+
+## ⚠️ Disclaimer
+- The Extension works for the full formated websides means those pages whose url start's with `https//:`
+
