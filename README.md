@@ -3,15 +3,22 @@ This is a gen ai took in the form of a browser extension which will summarize th
 
 **The files is in the master branch**
 
-#In order to use the extention first clone this repo then follow the folling steps : 
+## 🚀 How to Use the Extension
 
-1 -->  chrome://extensions/
-2 --> on the developer mode
-3 --> select the load unpacked 
-4 --> now upload the extension file which contain the  manifest.json,popup.html,popup.js,icon.png 
-6 --> now you are needed to on the Fast Api server by using the command uvicorn main:app --reload --port 8000
-5 --> your chrome extention is ready to be used in your extentions icon
+Follow these steps to install and run the extension locally:
 
+1. Open Chrome and go to: `chrome://extensions/`
+2. Enable **Developer Mode** (toggle in the top-right corner).
+3. Click on **“Load unpacked”**.
+4. Select the folder(Extension) that contains:
+   - `manifest.json`
+   - `popup.html`
+   - `popup.js`
+   - `icon.png`
+5. Start the FastAPI server by running the following command:
+   ```bash
+   uvicorn main:app --reload --port 8000
+   
 Using these methods you can set up the Fast Api server localy and use the Extension to summarize the web page content 
 
 But if you want to skip the process of turning on the Fast API server you can replace the responce fetch url to "https://crome-extension-for-summarizing-the-page-njdi.onrender.com/summarize" which is my hosted server on render.
