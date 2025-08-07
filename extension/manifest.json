@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Page Summarizer",
+  "version": "1.0",
+  "description": "Summarizes current webpage using LangChain and LLaMA via Groq",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
