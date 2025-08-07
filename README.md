@@ -21,7 +21,7 @@ Follow these steps to install and run the extension locally:
    
 Using these methods you can set up the Fast Api server localy and use the Extension to summarize the web page content 
 
-But if you want to skip the process of turning on the Fast API server you can replace the responce fetch url to "https://crome-extension-for-summarizing-the-page-njdi.onrender.com/summarize" which is my hosted server on render.
+But if you want to skip the process of turning on the Fast API server you can replace the responce fetch url to "https://crome-extension-for-summarizing-the-page-njdi.onrender.com/" which is my hosted server on render.
 
 ## 🔧 Tech Stack
 
